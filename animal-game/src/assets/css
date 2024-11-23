@@ -1,74 +1,99 @@
+/* Reset the body styles */
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f2f2f2;
-}
-
-.game-board {
-  width: 800px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-.game-board .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.game-board .column {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.game-board .result {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.game-board .animal-name {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.game-board .select-animal {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.game-board .animal-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.game-board .animal-image:hover {
-  opacity: 0.8;
-}
-
-.game-board .animal-image.selected {
-  border: 2px solid #007bff;
-}
-
-.game-board .figure-caption {
-  text-align: center;
-  margin-top:
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container to center the game */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  /* Game board styles */
+  .game-board {
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Styling for each row */
+  .game-board .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Each column for the animal options */
+  .game-board .column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Result section styling */
+  .game-board .result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Animal name display */
+  .game-board .animal-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Grid for displaying animal images */
+  .game-board .select-animal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the images */
+    gap: 10px;
+  }
+  
+  /* Styles for each animal image */
+  .game-board .animal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the images fit within the div */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for images */
+  .game-board .animal-image:hover {
+    opacity: 0.8;
+  }
+  
+  /* Selected animal image styling */
+  .game-board .animal-image.selected {
+    border: 2px solid #007bff;
+  }
+  
+  /* Caption under the images (optional) */
+  .game-board .figure-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+    
+  .animal-name {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+  
+  
